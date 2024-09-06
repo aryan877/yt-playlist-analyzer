@@ -1,9 +1,0 @@
-{
-	"id": "7LXxIByPsF3lwZ0",
-	"json": "{\"id\":\"7LXxIByPsF3lwZ0\",\"url\":\"https://youtube.com/playlist?list=PL0Yyhj9Mcbg9SgecTsZp73rQ0zmEUC1fu\",\"uniqueKey\":\"https://youtube.com/playlist?list=PL0Yyhj9Mcbg9SgecTsZp73rQ0zmEUC1fu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{}}",
-	"method": "GET",
-	"orderNo": 1725638556670,
-	"retryCount": 0,
-	"uniqueKey": "https://youtube.com/playlist?list=PL0Yyhj9Mcbg9SgecTsZp73rQ0zmEUC1fu",
-	"url": "https://youtube.com/playlist?list=PL0Yyhj9Mcbg9SgecTsZp73rQ0zmEUC1fu"
-}
