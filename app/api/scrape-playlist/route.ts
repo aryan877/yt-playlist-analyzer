@@ -1,10 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PlaywrightCrawler, Dataset } from "crawlee";
+import { v4 as uuidv4 } from "uuid";
 
 interface VideoData {
   title: string;
   views: number;
   thumbnail: string;
+}
+
+interface PlaylistData {
+  videoList: VideoData[];
+  graphData: { name: string; views: number }[];
 }
 
 export async function POST(request: NextRequest) {
@@ -17,11 +23,19 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const dataset = await Dataset.open(`playlist-${Date.now()}`);
+  const playlistId = new URL(playlistUrl).searchParams.get("list");
+  if (!playlistId) {
+    return NextResponse.json(
+      { error: "Invalid playlist URL" },
+      { status: 400 }
+    );
+  }
+
+  const uuid = uuidv4();
+  const dataset = await Dataset.open(`playlist-${uuid}`);
 
   const crawler = new PlaywrightCrawler({
     maxRequestsPerCrawl: 50,
-
     async requestHandler({ request, page, log }) {
       log.info(`Processing ${request.url}...`);
 
@@ -78,7 +92,10 @@ export async function POST(request: NextRequest) {
   });
 
   try {
-    await crawler.run([playlistUrl]);
+    // Use a unique key for the request to bypass caching
+    await crawler.run([
+      { url: playlistUrl, uniqueKey: `${playlistUrl}:${uuid}` },
+    ]);
 
     const results = await dataset.getData();
     const videos = (results.items[0]?.videos as VideoData[]) || [];
@@ -88,12 +105,14 @@ export async function POST(request: NextRequest) {
       views: video.views,
     }));
 
-    await dataset.drop();
-
-    return NextResponse.json({
+    const playlistData: PlaylistData = {
       videoList: videos,
       graphData: graphData,
-    });
+    };
+
+    await dataset.drop();
+
+    return NextResponse.json(playlistData);
   } catch (error) {
     console.error("Crawling failed:", error);
     await dataset.drop();

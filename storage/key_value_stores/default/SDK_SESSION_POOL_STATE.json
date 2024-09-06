@@ -3,7 +3,7 @@
   "retiredSessionsCount": 0,
   "sessions": [
     {
-      "id": "session_KU9IcxXocT",
+      "id": "session_vtSixzbp5J",
       "cookieJar": {
         "version": "tough-cookie@4.1.4",
         "storeType": "MemoryCookieStore",
@@ -16,14 +16,14 @@
       "userData": {},
       "maxErrorScore": 3,
       "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-06T17:40:12.382Z",
-      "createdAt": "2024-09-06T16:50:12.382Z",
+      "expiresAt": "2024-09-06T19:08:10.601Z",
+      "createdAt": "2024-09-06T18:18:10.601Z",
       "usageCount": 0,
       "maxUsageCount": 50,
       "errorScore": 0
     },
     {
-      "id": "session_o9LMmgwmVV",
+      "id": "session_04KSo5gbDo",
       "cookieJar": {
         "version": "tough-cookie@4.1.4",
         "storeType": "MemoryCookieStore",
@@ -35,69 +35,69 @@
           {
             "key": "GPS",
             "value": "1",
-            "expires": "2024-09-06T17:20:13.929Z",
+            "expires": "2024-09-06T18:48:12.333Z",
             "domain": "youtube.com",
             "path": "/",
             "secure": true,
             "httpOnly": true,
             "hostOnly": false,
-            "creation": "2024-09-06T16:50:15.227Z",
-            "lastAccessed": "2024-09-06T16:50:15.227Z"
+            "creation": "2024-09-06T18:18:13.581Z",
+            "lastAccessed": "2024-09-06T18:18:13.581Z"
           },
           {
             "key": "YSC",
-            "value": "AxO6S3WV-L8",
-            "expires": "2024-09-06T17:40:15.224Z",
+            "value": "NCRPVcZCLw0",
+            "expires": "2024-09-06T19:08:13.576Z",
             "domain": "youtube.com",
             "path": "/",
             "secure": true,
             "httpOnly": true,
             "hostOnly": false,
-            "creation": "2024-09-06T16:50:15.232Z",
-            "lastAccessed": "2024-09-06T16:50:15.232Z"
+            "creation": "2024-09-06T18:18:13.590Z",
+            "lastAccessed": "2024-09-06T18:18:13.590Z"
           },
           {
             "key": "VISITOR_INFO1_LIVE",
-            "value": "oL3iXAAfXs8",
-            "expires": "2025-03-05T16:50:13.930Z",
+            "value": "j8poofAqs-A",
+            "expires": "2025-03-05T18:18:12.335Z",
             "domain": "youtube.com",
             "path": "/",
             "secure": true,
             "httpOnly": true,
             "hostOnly": false,
-            "creation": "2024-09-06T16:50:15.234Z",
-            "lastAccessed": "2024-09-06T16:50:15.234Z"
+            "creation": "2024-09-06T18:18:13.592Z",
+            "lastAccessed": "2024-09-06T18:18:13.592Z"
           },
           {
             "key": "VISITOR_PRIVACY_METADATA",
-            "value": "CgJJThIEGgAgMw%3D%3D",
-            "expires": "2025-03-05T16:50:13.930Z",
+            "value": "CgJJThIEGgAgDQ%3D%3D",
+            "expires": "2025-03-05T18:18:12.335Z",
             "domain": "youtube.com",
             "path": "/",
             "secure": true,
             "httpOnly": true,
             "hostOnly": false,
-            "creation": "2024-09-06T16:50:15.234Z",
-            "lastAccessed": "2024-09-06T16:50:15.234Z"
+            "creation": "2024-09-06T18:18:13.593Z",
+            "lastAccessed": "2024-09-06T18:18:13.593Z"
           },
           {
             "key": "PREF",
-            "value": "f4=4000000&tz=Asia.Calcutta",
-            "expires": "2025-10-11T16:50:14.804Z",
+            "value": "tz=Asia.Calcutta",
+            "expires": "2025-10-11T18:18:13.189Z",
             "domain": "youtube.com",
             "path": "/",
             "secure": true,
             "hostOnly": false,
-            "creation": "2024-09-06T16:50:15.234Z",
-            "lastAccessed": "2024-09-06T16:50:15.234Z"
+            "creation": "2024-09-06T18:18:13.593Z",
+            "lastAccessed": "2024-09-06T18:18:13.593Z"
           }
         ]
       },
       "userData": {},
       "maxErrorScore": 3,
       "errorScoreDecrement": 0.5,
-      "expiresAt": "2024-09-06T17:40:12.383Z",
-      "createdAt": "2024-09-06T16:50:12.383Z",
+      "expiresAt": "2024-09-06T19:08:10.603Z",
+      "createdAt": "2024-09-06T18:18:10.603Z",
       "usageCount": 2,
       "maxUsageCount": 50,
       "errorScore": 0
